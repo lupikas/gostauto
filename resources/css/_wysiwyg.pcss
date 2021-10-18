@@ -1,0 +1,29 @@
+.wysiwyg-content {
+    @apply text-gray-450 text-20px font-light;
+
+    h2 {
+        @apply text-30px lg:text-45px font-bold mb-4;
+        line-height: 1.2;
+    }
+
+    h3 {
+        @apply text-blue-850 text-25px font-medium mb-5;
+    }
+
+    h4 {
+        @apply text-blue-850 text-20px font-bold;
+    }
+
+    p {
+        @apply mb-8 leading-tight;
+    }
+
+    img {
+        @media only screen and (max-width: 768px) {
+            float: none !important;
+            max-height: 300px;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+}

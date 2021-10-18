@@ -1,0 +1,20 @@
+.feedback-heading {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 84px;
+        height: 3px;
+        @apply bg-blue-850;
+    }
+}
+
+.feedback-circle {
+    @apply absolute left-0 z-30 w-117px h-117px rounded-full bg-gray-100;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -58.5px;
+}

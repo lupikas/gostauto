@@ -1,0 +1,16 @@
+.doctor {
+    @apply block relative bg-cover overflow-hidden rounded-15px;
+
+    @screen lg {
+        @apply opacity-80 transition-all duration-300;
+        filter: grayscale(1);
+    }
+
+    &.active,
+    &:hover {
+        @screen lg {
+            @apply opacity-100;
+            filter: grayscale(0);
+        }
+    }
+}

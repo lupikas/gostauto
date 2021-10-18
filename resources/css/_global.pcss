@@ -1,0 +1,79 @@
+html,
+body {
+    @apply font-roboto;
+}
+
+.container {
+    @apply w-full mx-auto px-4 xxl:px-0 relative max-w-1640px;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+.section {
+    @apply py-45px md:py-60px;
+
+    &-heading {
+        @apply text-30px md:text-45px font-bold text-gray-450;
+    }
+}
+
+.section-circle {
+    @apply hidden lg:inline-block absolute z-30 w-105px h-105px rounded-full bg-gray-100;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.procedure-badge {
+    &:hover {
+        background-image: url('../images/patern_1.jpeg');
+
+        .badge-corner {
+            @apply bg-cover bg-blue-850;
+        }
+    }
+}
+
+.procedure-badge-wrap {
+    &:hover {
+        .procedure-badge {
+            background-image: url('../images/patern_1.jpeg');
+            color: #fff;
+        }
+
+        .badge-corner {
+            @apply bg-cover bg-blue-850;
+        }
+    }
+}
+
+.js-cookie-consent.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 360px;
+    background: #0a4784;
+    border-radius: 0.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    z-index: 100;
+}
+
+.cookie-consent__agree {
+    border: 1px solid #fff;
+    padding: 7px 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: #fff;
+        color: #0a4784;
+    }
+}
