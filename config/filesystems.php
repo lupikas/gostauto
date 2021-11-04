@@ -33,14 +33,14 @@ return [
         'local' => [
             'driver' => 'local',
             'root' => public_path('images'),
-            'url' => env('APP_URL').'/dev/public/images',
+            'url' => env('APP_URL').'/images',
             'visibility' => 'public',
         ],
 
         'public' => [
             'driver' => 'local',
             'root' => public_path('images'),
-            'url' => env('APP_URL').'/dev/public/images',
+            'url' => env('APP_URL').'/images',
             'visibility' => 'public',
         ],
 
